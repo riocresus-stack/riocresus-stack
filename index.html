@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Notre petit rendez-vous ❤️"
+  >
+
+  <title>Notre petit rendez-vous ❤️</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- =========================
+         ACCUEIL
+    ========================== -->
+
+    <section class="card active" id="welcome">
+
+      <div class="heart">❤️</div>
+
+      <p class="small">
+        Un petit questionnaire rien que pour toi...
+      </p>
+
+      <h1>
+        Pour ma Chou,<br>
+        <span>Juju Love ❤️</span>
+      </h1>
+
+      <p>
+        J'ai préparé quelque chose de spécial pour nous deux.
+        Tu vas faire quelques petits choix pour notre prochaine
+        journée ensemble. 🥰
+      </p>
+
+      <p>
+        Réponds simplement et surtout,
+        sois honnête avec ton Chou. ❤️
+      </p>
+
+      <p class="signature">
+        Avec beaucoup d'affection,<br>
+        <strong>Ton Chou ❤️</strong>
+      </p>
+
+      <button onclick="nextStep()">
+        Commencer ✨
+      </button>
+
+    </section>
+
+
+    <!-- =========================
+         CHOIX DU JOUR
+    ========================== -->
+
+    <section class="card" id="day">
+
+      <h2>Notre journée 🌹</h2>
+
+      <p>
+        Tu reviens à Kpessi vendredi, samedi ou dimanche.
+        Alors choisis le jour où tu aimerais qu'on passe
+        la journée ensemble. ❤️
+      </p>
+
+      <div class="options">
+
+        <label class="option">
+          <input
+            type="radio"
+            name="day"
+            value="Vendredi"
+          >
+          <span>🌸 Vendredi</span>
+        </label>
+
+        <label class="option">
+          <input
+            type="radio"
+            name="day"
+            value="Samedi"
+          >
+          <span>💗 Samedi</span>
+        </label>
+
+        <label class="option">
+          <input
+            type="radio"
+            name="day"
+            value="Dimanche"
+          >
+          <span>🌷 Dimanche</span>
+        </label>
+
+      </div>
+
+      <button onclick="saveDay()">
+        Continuer →
+      </button>
+
+    </section>
+
+
+    <!-- =========================
+         CADEAU POUR NATASHA
+    ========================== -->
+
+    <section class="card" id="giftForHer">
+
+      <h2>Un petit cadeau pour toi 🎁</h2>
+
+      <p>
+        Ma Chou ❤️, parmi ces trois possibilités,
+        qu'aimerais-tu que ton Chou t'offre ?
+      </p>
+
+      <div class="options">
+
+        <label class="option">
+          <input
+            type="radio"
+            name="giftForHer"
+            value="Une bague 💍"
+          >
+          <span>💍 Une bague</span>
+        </label>
+
+        <label class="option">
+          <input
+            type="radio"
+            name="giftForHer"
+            value="Un Atsekè 🍽️"
+          >
+          <span>🍽️ Un Atsekè</span>
+        </label>
+
+        <label class="option">
+          <input
+            type="radio"
+            name="giftForHer"
+            value="Une surprise 🎁"
+          >
+          <span>🎁 Une surprise</span>
+        </label>
+
+      </div>
+
+      <button onclick="saveGiftForHer()">
+        Continuer →
+      </button>
+
+    </section>
+
+
+    <!-- =========================
+         CADEAU POUR RIO
+    ========================== -->
+
+    <section class="card" id="giftForMe">
+
+      <h2>À ton tour... 😌❤️</h2>
+
+      <p>
+        Maintenant Juju Love 🥰,
+        qu'aimerais-tu offrir à ton Chou ?
+      </p>
+
+      <div class="options">
+
+        <label class="option">
+          <input
+            type="radio"
+            name="giftForMe"
+            value="Une bague 💍"
+          >
+          <span>💍 Une bague</span>
+        </label>
+
+        <label class="option">
+          <input
+            type="radio"
+            name="giftForMe"
+            value="Un Atsekè 🍽️"
+          >
+          <span>🍽️ Un Atsekè</span>
+        </label>
+
+        <label class="option">
+          <input
+            type="radio"
+            name="giftForMe"
+            value="Une surprise 🎁"
+          >
+          <span>🎁 Une surprise</span>
+        </label>
+
+      </div>
+
+      <button onclick="saveGiftForMe()">
+        Continuer →
+      </button>
+
+    </section>
+
+
+    <!-- =========================
+         ACTIVITÉ
+    ========================== -->
+
+    <section class="card" id="activity">
+
+      <h2>Notre moment à deux 🥰</h2>
+
+      <p>
+        Qu'aimerais-tu qu'on fasse ensemble
+        pendant notre journée ?
+      </p>
+
+      <div class="options">
+
+        <label class="option">
+          <input
+            type="radio"
+            name="activity"
+            value="Discuter tranquillement 💬"
+          >
+          <span>
+            💬 Discuter tranquillement
+          </span>
+        </label>
+
+        <label class="option">
+          <input
+            type="radio"
+            name="activity"
+            value="Chanter et danser 🎶"
+          >
+          <span>
+            🎶 Chanter & danser
+          </span>
+        </label>
+
+        <label class="option">
+          <input
+            type="radio"
+            name="activity"
+            value="Regarder un film ensemble 🎬"
+          >
+          <span>
+            🎬 Regarder un film ensemble
+          </span>
+        </label>
+
+        <label class="option">
+          <input
+            type="radio"
+            name="activity"
+            value="Se dire les vérités qu'on ne s'est jamais dites ❤️"
+          >
+          <span>
+            ❤️ Se dire les vérités qu'on
+            ne s'est jamais dites
+          </span>
+        </label>
+
+      </div>
+
+      <button onclick="saveActivity()">
+        Continuer →
+      </button>
+
+    </section>
+
+
+    <!-- =========================
+         QUESTIONS SUR LE COUPLE
+    ========================== -->
+
+    <section class="card" id="couple">
+
+      <h2>Entre nous deux ❤️</h2>
+
+      <p>
+        Maintenant, j'aimerais vraiment connaître
+        ton cœur. Réponds simplement et honnêtement,
+        ma Chou. 🥰
+      </p>
+
+
+      <label for="love">
+        ❤️ Qu'est-ce que tu adores dans notre couple ?
+      </label>
+
+      <textarea
+        id="love"
+        placeholder="Écris ce que tu aimes le plus chez nous..."
+      ></textarea>
+
+
+      <label for="dislike">
+        💭 Qu'est-ce que tu n'aimes pas dans notre couple ?
+      </label>
+
+      <textarea
+        id="dislike"
+        placeholder="Tu peux être honnête avec moi..."
+      ></textarea>
+
+
+      <label for="improve">
+        🌱 Qu'aimerais-tu qu'on améliore ensemble ?
+      </label>
+
+      <textarea
+        id="improve"
+        placeholder="Une chose que tu aimerais changer ou améliorer..."
+      ></textarea>
+
+
+      <label for="message">
+        💌 Un petit message pour ton Chou ❤️
+      </label>
+
+      <textarea
+        id="message"
+        placeholder="Écris-moi quelque chose..."
+      ></textarea>
+
+
+      <button onclick="confirmAnswers()">
+        Confirmer mes choix ❤️
+      </button>
+
+    </section>
+
+
+    <!-- =========================
+         FIN
+    ========================== -->
+
+    <section class="card" id="thanks">
+
+      <div class="big-heart">
+        💖
+      </div>
+
+      <h1>
+        Merci ma Chou ❤️
+      </h1>
+
+      <p>
+        Tes réponses ont bien été enregistrées. 🥰
+      </p>
+
+      <p>
+        Maintenant, il ne reste plus qu'à attendre
+        notre petit moment ensemble. 🌹
+      </p>
+
+      <p class="final">
+        Peu importe le jour, le cadeau ou l'activité,
+        le plus important pour moi est de passer
+        un beau moment avec toi. ❤️
+      </p>
+
+      <strong>
+        Ton Chou, pour Juju Love ❤️
+      </strong>
+
+    </section>
+
+  </main>
+
+
+  <!-- IMPORTANT :
+       type="module" est nécessaire pour Firebase
+  -->
+
+  <script
+    type="module"
+    src="script.js"
+  ></script>
+
+</body>
+</html>
